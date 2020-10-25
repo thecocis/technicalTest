@@ -1,0 +1,32 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+Gen:
+    path: /general
+    controller: App\Controller\GenController::index
+
+create:
+    path: /create
+    controller: App\Controller\GenController::create
+    methods: [POST]
+
+remove:
+    path: /remove/{id}
+    controller: App\Controller\GenController::remove
+    methods: [DELETE]
+
+edit:
+    path: /edit/{id}
+    controller: App\Controller\GenController::edit
+    methods: [PUT]
+
+listAll:
+    path: /listAll
+    controller: App\Controller\GenController::listAll
+    methods: [GET]
+
+listDone:
+    path: /listDone
+    controller: App\Controller\GenController::listDone
+    methods: [GET]
